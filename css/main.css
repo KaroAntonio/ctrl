@@ -1,0 +1,51 @@
+body {
+	background-color: #008080;
+	overflow: hidden;
+}
+
+#alert-box {
+	position: absolute;
+	top: 20vh;
+	left:10%;
+	right:0;
+	margin: 0 auto;
+	display: block;
+}
+
+#notepad-body {
+	padding-right: 10px;	
+	height: 320px;
+}
+
+#text-box {
+	overflow:hidden;
+	box-shadow: -1px -1px 0 0 #808080, 1px 1px 0 0 #fff;
+	border: 1px solid;
+	border-top-color: #000;
+	border-left-color: #000;
+	border-right-color: #dfdfdf;
+	border-bottom-color: #dfdfdf;
+	resize: none;
+	width: 100%;
+	height: 300px;
+	font-size: 14px;
+}
+
+#text-box:focus {
+	outline-width: 0;
+}
+
+#notepad-menu div {
+	padding-right: 13px;
+	padding-bottom: 4px;	
+	margin-top: -3px;	
+	float: left;
+	display: inline-block;
+}
+
+.window {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10vh;
+}
+

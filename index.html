@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ctrl-alt-del</title>
+    <link rel="stylesheet" href="css/win98.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+<body class='win98'>
+    <br/>
+    <div class='window'>
+      <div class='header'>
+        <img class='icon' src='assets/txt.gif' srcset='assets/txt@2x.gif 32w, assets/txt@4x.gif 64w' />
+        Untitled - Notepad
+        <div class='buttons'>
+          <button id='min-button'>_</button>
+          <button id='max-button'>&#9634;</button>
+          <button id='esc-button'>&times;</button>
+        </div>
+      </div>
+	<div class='content' id='notepad-body'>
+		<div id='notepad-menu'>
+			<div><u>F</u>ile</div>
+			<div><u>E</u>dit</div>
+			<div><u>S</u>earch</div>
+			<div><u>H</u>elp</div>
+		</div>
+		<center>
+			<textarea id='text-box'></textarea>
+        </center>
+      </div>
+    </div>
+<div class='window' id='alert-box'>
+      <div class='header'>
+        <img class='icon' src='assets/exe.gif' srcset='assets/exe@2x.gif 32w, assets/exe@4x.gif 64w' />
+        <div id='alert-box-header'></div>
+      </div>
+
+      <div class='content'>
+        <center>
+          <h3 id='alert-box-h3'></h3>
+          <p id='alert-box-p'></p>
+          <button id='alert-box-button'></button>
+        </center>
+      </div>
+    </div>
+  </body>
+
+<!-- top button -->
+<script src="https://raw.githubusercontent.com/KaroAntonio/net-template/master/js/universal-home.js"></script>
+<script src="script.js"></script>
+</html>
