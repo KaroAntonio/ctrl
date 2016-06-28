@@ -1,9 +1,13 @@
 var alert_box;
 
+
+
 var width = document.innerWidth,
 	height = document.innerHeight;
 
 var type_ptr = 0;
+var s = 100;
+
 
 $(document).ready(function() {
 	$('#min-button').click(function () {
@@ -24,18 +28,17 @@ $(document).ready(function() {
 	$('#text-box').focus();
 	$('#text-box').keypress(function(e) {
 		type_ptr += 1
-		if ( type_ptr > 10 ){ e.preventDefault(); next(); }
-
+		var cptr = (type_ptr-16)*s;
+		if ( type_ptr > 10 && cptr < content.length ){ e.preventDefault(); next(); }
 	})
 })
 
 function next() {
 	var txt = $('#text-box').val();
-	$('#text-box').val( txt + 'you like this?' );
+	var cptr = (type_ptr-16)*s;
+	$('#text-box').val( txt + content.substring(cptr, cptr+s) );
 	$('#text-box').scrollTop(100000000); // Scroll to the lowest thing ever
-
 }
-
 
 function display_alert(text) {
 	$('#alert-box-header').html(text[0]);
