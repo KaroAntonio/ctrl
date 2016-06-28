@@ -6,7 +6,7 @@ var width = document.innerWidth,
 	height = document.innerHeight;
 
 var type_ptr = 0;
-var s = 100;
+var s = 10;
 
 
 $(document).ready(function() {
