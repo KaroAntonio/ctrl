@@ -10,6 +10,7 @@ var s = 10;
 
 
 $(document).ready(function() {
+	assign_credit();
 	$('#min-button').click(function () {
 		display_alert([
 			'Apathy Reduction Wizard','','Where else do you have to go?','nowhere']);
@@ -32,6 +33,21 @@ $(document).ready(function() {
 		if ( type_ptr > 10 && cptr < content.length ){ e.preventDefault(); next(); }
 	})
 })
+
+function assign_credit() {
+	console.log('assign;');
+	$('#credit').css({
+		'position':'absolute',
+		'background':'white',
+		'right':'10px',
+		'top':'10px',
+		'cursor':'pointer'
+	});
+	$('#credit').click(function() {
+		window.location = 'https://twitter.com/fluvox?lang=en';
+	});
+
+}
 
 function next() {
 	var txt = $('#text-box').val();
