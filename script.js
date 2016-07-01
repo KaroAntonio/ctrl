@@ -44,7 +44,7 @@ function assign_credit() {
 		'cursor':'pointer'
 	});
 	$('#credit').click(function() {
-		window.location = 'https://twitter.com/fluvox?lang=en';
+		window.location.replace('https://twitter.com/fluvox?lang=en');
 	});
 
 }
